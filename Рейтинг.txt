@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Магазин</title>
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="sidebar">
+        <h2 class="sidebar__title">Фильтры</h2>
+        <label class="sidebar__label">Категория
+            <select class="sidebar__filter sidebar__filter--category">
+                <option value="all">Все</option>
+                <option value="electronics">Электроника</option>
+                <option value="clothing">Одежда</option>
+            </select>
+        </label>
+        <label class="sidebar__label">Цена
+            <input type="number" class="sidebar__filter sidebar__filter--price" placeholder="Минимум">
+            <input type="number" class="sidebar__filter sidebar__filter--price" placeholder="Максимум">
+        </label>
+        <div class="sidebar__properties">
+            <label><input type="checkbox" class="sidebar__checkbox"> Новинка</label>
+            <label><input type="checkbox" class="sidebar__checkbox"> Скидка</label>
+        </div>
+    </div>
+
+    <div class="sort">
+        <label class="sort__label">Сортировать по
+            <select class="sort__dropdown">
+                <option value="price">Цене</option>
+                <option value="new">Новизне</option>
+            </select>
+        </label>
+    </div>
+
+    <div class="product-list">
+        <div class="product">
+            <img src="product1.jpg" alt="Товар 1" class="product__image">
+            <h3 class="product__name">Товар 1</h3>
+            <span class="product__tag">Акция</span>
+            <button class="product__buy">Купить</button>
+        </div>
+    </div>
+</body>
+</html>
+
+
+/* Подключение шрифта */
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+.sidebar {
+    width: 250px;
+}
+
+.sidebar__title {
+    font-weight: 700;
+}
+
+.sidebar__filter--category,
+.sidebar__filter--price,
+.sidebar__checkbox {
+    margin-top: 10px;
+}
+
+.sort {
+    margin: 20px 0;
+}
+
+.product-list {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.product {
+    width: 200px;
+    margin: 10px;
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: center;
+}
+
+.product__image {
+    width: 100%;
+    height: auto;
+}
+
+.product__name {
+    font-size: 18px;
+}
+
+.product__tag {
+    color: red;
+    font-weight: 700;
+}
+
+.product__buy {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px;
+    cursor: pointer;
+}

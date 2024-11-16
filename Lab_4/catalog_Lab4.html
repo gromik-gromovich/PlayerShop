@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Каталог</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style33.css">
+</head>
+<body>
+    <header>
+        <div class="header-background">
+            <img src="background_logo.jpg" alt="Фон логотипа" class="background-img">
+            <div class="top-bar">
+                <div class="left-group">
+                    <input type="text" placeholder="Search" class="search-input">
+                    <button class="auth-button">Регистрация/ Вход</button>
+                </div>
+                <img src="ring.jpg" alt="Логотип" class="foreground-logo">
+                <div class="right-group">
+                    <button class="contact-button">Контакты</button>
+                    <button class="promo-button">Промокоды</button>
+                </div>
+            </div>
+        </div>
+        <nav>
+            <button class="nav-button">Каталог</button>
+            <button class="nav-button">О Нас</button>
+            <button class="nav-button">Акции</button>
+        </nav>
+    </header>
+    <main>
+        <aside class="filter-section">
+            <form>
+                <label for="category">Категория:</label>
+                <select id="category" name="category">
+                    <option value="all">Все</option>
+                    <option value="shoes">Обувь</option>
+                    <option value="clothers">Одежда</option>
+                    <option value="equipment">Экипировка</option>
+                    <option value="Merch">Мерч</option>
+                </select>
+                <label for="price">Цена:</label>
+                <input type="number" id="price" name="price" placeholder="Макс. цена">
+
+                <label for="sort">Сортировка:</label>
+                <select id="sort" name="sort">
+                    <option value="none">Без сортировки</option>
+                    <option value="ascending">Цена: по возрастанию</option>
+                    <option value="descending">Цена: по убыванию</option>
+                </select>
+                <button type="submit">Применить Фильтр</button>
+           </form>
+        </aside>    
+        <div class="catalog-wrapper">
+            <section class="catalog">
+                <div class="product">
+                    <div class="image-container">
+                        <a href="product_page_link.html">
+                            <img src="NIke Tiempo 1.png" alt="Бутсы Nike Tiempo Legend 9 Elite FG">
+                        </a>
+                    </div>
+                    <h3><a href="product_page_link.html">Бутсы Nike Tiempo Legend 9 Elite FG</a></h3>
+                    <p> Профессиональные футбольные бутсы с отличным сцеплением и комфортом.</p>
+                    <p class="price-button">Цена: 43990₽</p>
+                </div>
+                <div class="product">
+                    <div class="image-container">
+                        <a href="product_page_link.html">
+                            <img src="orig.png" alt="Манижки оранжевые">
+                        </a>
+                    </div>
+                    <h3><a href="product_page_link.html">Манижки оранжевые</a></h3>
+                    <p>Яркие тренировочные манижки для командных тренировок.</p>
+                    <p class="price-button">Цена: 1500₽</p>
+                </div>
+                <div class="product">
+                    <div class="image-container">
+                        <a href="product_page_link.html">
+                            <img src="Players Club T-short.png" alt="Футболка Players Club">
+                        </a>
+                    </div>
+                    <h3><a href="product_page_link.html">Футболка Players Club</a></h3>
+                    <p>Качественная футболка для повседневной носки с логотипом клуба.</p>
+                    <p class="price-button">Цена: 3990₽</p>
+                </div>
+                <div class="product">
+                    <div class="image-container">
+                        <a href="product_page_link.html">
+                            <img src="pumki2.png" alt="Бутсы ULTRA 5 ULTIMATE MxSG Football Boots">
+                        </a>
+                    </div>
+                    <h3><a href="product_page_link.html">PUMA ULTRA 5 ULTIMATE MxSG </a></h3>
+                    <p>Бутсы с увеличенной устойчивостью и легкостью для максимальной производительности.</p>
+                    <p class="price-button">Цена: 23990₽</p>
+                </div>
+                <div class="product">
+                    <div class="image-container">
+                        <a href="product_page_link.html">
+                            <img src="RIdFFsXyzeV.jpg" alt="Координационная лестница">
+                        </a>
+                    </div>
+                    <h3><a href="product_page_link.html">Координационная лестница</a></h3>
+                    <p>Инвентарь для тренировок по улучшению скорости и ловкости.</p>
+                    <p class="price-button">Цена: 990₽</p>
+                </div>
+                <div class="product">
+                    <div class="image-container">
+                        <a href="product_page_link.html">
+                            <img src="Suit 1.png" alt="Форма на заказ">
+                        </a>
+                    </div>
+                    <h3><a href="product_page_link.html">Форма на заказ</a></h3>
+                    <p>Индивидуальный комплект формы для спортивных мероприятий.</p>
+                    <p class="price-button">Цена: 3990₽</p>
+                </div>
+                <div class="product">
+                    <div class="image-container">
+                        <a href="product_page_link.html">
+                            <img src="Zenit-Hoodie 2.png" alt="Худи Players Club&Zenit">
+                        </a>
+                    </div>
+                    <h3><a href="product_page_link.html">Худи Players Club&Zenit</a></h3>
+                    <p>Удобное худи с совместным дизайном клуба и команды.</p>
+                    <p class="price-button">Цена: 11990₽</p>
+                </div>
+                <div class="product">
+                    <div class="image-container">
+                        <a href="product_page_link.html">
+                            <img src="Манижки.png" alt="Манижки синие">
+                        </a>
+                    </div>
+                    <h3><a href="product_page_link.html">Манижки синие</a></h3>
+                    <p>Универсальные манижки для тренировок с ярким цветом и легким материалом.</p>
+                    <p class="price-button">Цена: 1500₽</p>
+                </div>
+            </section>            
+        </div>
+        <nav class="pagination">
+            <button class="page-button prev">Назад</button>
+            <button class="page-button next">Далее</button>
+        </nav>
+    </main>
+    <footer>
+        <div class="footer-content">
+            <div class="map-button-container">
+                <button class="map-button">Где нас найти?</button>
+            </div>
+            <div class="footer-logo">
+                <img src="logo.png" alt="Player Shop Logo">
+            </div>
+            <div class="contact">
+                <h3>Связь с нами:</h3>
+                <p>+79005874570</p>
+                <p>33hjk.glhf@gmail.com</p>
+                <button class="support-button">Тех.поддержка</button>
+            </div>
+        </div>
+        <p class="copyright">&copy; 2024 Players Shop. All rights reserved.</p>
+    </footer>
+</body>
+</html>

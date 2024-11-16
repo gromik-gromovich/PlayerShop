@@ -28,24 +28,32 @@
             <button class="nav-button">Акции</button>
         </nav>
     </header>
+
     <!-- Основное содержимое страницы -->
     <main>
         <section class="products">
             <h2>Хедлайнеры продаж</h2>
-            <div class="product-item">
-                <img src="Tiempo.jpg" alt="Бутсы Nike Tiempo Legend 9 Elite FG">
-                <h3>Бутсы Nike Tiempo Legend 9 Elite FG</h3>
-                <p>43 990₽</p>
-            </div>
-            <div class="product-item">
-                <img src="Pumki.png" alt="Бутсы Ultra 5 Ultimate MxSG">
-                <h3>Бутсы ULTRA 5 ULTIMATE MxSG Football Boots</h3>
-                <p>22 990₽</p>
-            </div>
-            <div class="product-item">
-                <img src="Players Club T-short.png" alt="Футболка мужская Players Club">
-                <h3>Футболка мужская "Players Club"</h3>
-                <p>3 990₽</p>
+            <div class="product-container">
+                <!-- Продукт 1 -->
+                <a href="product1.html" class="product-item"> <!-- Добавляем ссылку -->
+                    <img src="Tiempo.jpg" alt="Бутсы Nike Tiempo Legend 9 Elite FG">
+                    <h3>Бутсы Nike Tiempo Legend 9 Elite FG</h3>
+                    <p><button class="price-button">43 990₽</button></p>
+                </a>
+
+                <!-- Продукт 2 -->
+                <a href="product2.html" class="product-item"> <!-- Добавляем ссылку -->
+                    <img src="pumki1.png" alt="Бутсы Ultra 5 Ultimate MxSG">
+                    <h3>Бутсы ULTRA 5 ULTIMATE MxSG Football Boots</h3>
+                    <p><button class="price-button">22 990₽</button></p>
+                </a>
+
+                <!-- Продукт 3 -->
+                <a href="product3.html" class="product-item"> <!-- Добавляем ссылку -->
+                    <img src="Players Club T-short.png" alt="Футболка мужская Players Club">
+                    <h3>Футболка мужская "Players Club"</h3>
+                    <p><button class="price-button">3 990₽</button></p>
+                </a>
             </div>
         </section>
     </main>
@@ -54,7 +62,10 @@
     <footer>
         <div class="footer-content">
             <div class="map-button-container">
-                <button class="map-button">Где нас найти?</button>
+                <div class="map-content">
+                    <img src="place.png" alt="Местоположение" class="location-icon">
+                    <button class="map-button">Где нас найти?</button>
+                </div>
             </div>
             <div class="footer-logo">
                 <img src="logo.png" alt="Player Shop Logo">
@@ -66,7 +77,9 @@
                 <button class="support-button">Тех.поддержка</button>
             </div>
         </div>
-        <p class="copyright">&copy; 2024 Players Shop. All rights reserved.</p>
+        <div class="footer-copyright">
+            © 2024 Players Shop. All rights reserved.
+        </div>
     </footer>
 </body>
 </html>
