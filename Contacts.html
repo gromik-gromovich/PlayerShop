@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Контакты</title>
+    <title>О Нас</title>
     <link rel="stylesheet" href="style52.css">
 </head>
 <body>
@@ -29,32 +29,24 @@
         </nav>
     </header>
 
-   <!-- Основное содержимое страницы -->
-   <main style="background-color: hotpink; padding: 20px;">
-    <h1 style="text-align: center; font-size: 2rem; margin-bottom: 10px;">Players Shop</h1>
-    <h2 style="text-align: center; font-style: italic; margin-bottom: 20px;">Кто мы?</h2>
-    <div style="display: flex; justify-content: center; gap: 20px; flex-wrap: wrap; margin-bottom: 20px;">
-        <img src="Whowe.png" alt="Логотип Зенит" style="max-width: 500px; height: auto;">
-        <img src="logo.png" alt="Логотип Players Shop" style="max-width: 700px; height: auto;">
-    </div>
+    <!-- Основное содержимое страницы -->
+    <main style="background-color: hotpink; padding: 20px;">
+        <h1 style="text-align: center; font-size: 2rem; margin-bottom: 10px;">Контакты</h1>
+        <div class="text-box">
+            <h2>Адрес</h2>
+            <p>г. Владимир, Пр-т строителей, д. 44Б</p>
+        </div>
+        <div class="text-box">
+            <h2>Информация для связи</h2>
+            <p>Email: <a href="mailto:info@playershop.ru">info@playershop.ru</a></p>
+            <p>Телефон: <a href="tel:+79005874570">+7 (900) 587-45-70</a></p>
+        </div>
 
-    <!-- Рамки для текста -->
-    <div class="text-box">
-        <p>
-            Добро пожаловать в <strong>Players Shop</strong> — ваш надёжный источник футбольной экипировки и спортивных аксессуаров.
-            Уже более 4 лет мы предлагаем широкий выбор качественной продукции для всех, кто ценит европейское качество и доступные цены.
-            Наша цель — поддерживать каждого спортсмена, будь то профессионал или любитель, с помощью тщательно подобранного ассортимента.
-        </p>
-    </div>
-    <div class="text-box">
-        <p>
-            Мы гордимся сотрудничеством с одним из ведущих футбольных клубов России — <strong>ФК "Зенит"</strong>.
-            Благодаря этому партнёрству наши покупатели могут найти эксклюзивную коллекцию атрибутики и аксессуаров, созданных специально для фанатов и поклонников клуба.
-            <br><br>
-            <strong>Players Shop</strong> — это больше, чем магазин. Это место, где объединяются страсть к футболу, стиль и функциональность.
-        </p>
-    </div>
-</main>
+        <!-- Карта -->
+        <div id="map-container" style="display: flex; justify-content: center; align-items: center; margin-top: 20px;">
+            <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Afed38ce7fefa6a7a56f87b7bdfd686ef90bc165928a9381f13acc85ad07245f5&amp;width=840&amp;height=416&amp;lang=ru_RU&amp;scroll=true"></script>
+        </div>
+    </main>
 
 <!-- Footer -->
 <footer>
