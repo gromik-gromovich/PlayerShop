@@ -45,6 +45,23 @@ header {
     padding: 0 20px;
 }
 
+/* Стиль для рамки вокруг текста */
+.text-box {
+    border: 2px solid #e87c97; /* Цвет рамки */
+    padding: 15px; /* Отступы внутри рамки */
+    margin: 20px auto; /* Отступы снаружи рамки */
+    border-radius: 10px; /* Скругленные углы */
+    background-color: #fff5f8; /* Цвет фона внутри рамки */
+    max-width: 600px; /* Максимальная ширина для аккуратности */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Лёгкая тень */
+}
+
+.text-box p {
+    margin: 0;
+    font-size: 1.2rem;
+    line-height: 1.5;
+}
+
 .left-group, .right-group {
     display: flex;
     flex-direction: column;
