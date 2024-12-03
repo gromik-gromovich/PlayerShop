@@ -4,6 +4,7 @@ body {
     margin: 0;
     padding: 0;
     overflow-x: hidden;
+    background-color: transparent;
 }
 
 /* Header Section */
@@ -216,6 +217,113 @@ nav {
     color: #fff; /* Цвет текста */
 }
 
+/* Стиль для текста артикула */
+.black-friday-product p {
+    font-size: 0.9em;
+    color: #aaa; /* Серый цвет для артикула */
+    margin-top: 10px;
+}
+
+/* Плавный эффект для товара при наведении */
+.black-friday-product:hover {
+    transform: scale(1.05); /* Увеличение при наведении */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Легкая тень */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Эффект для кнопки при наведении */
+.price-btn:hover {
+    background-color: #e20e3c; /* Увеличение насыщенности цвета кнопки */
+    transform: scale(1.1); /* Легкое увеличение */
+}
+
+/* Вставка стилей для блока Black Friday */
+.black-friday {
+    background-color: #000;  /* Черный фон */
+    padding: 40px 20px;
+    color: #fff;  /* Белый цвет текста */
+    text-align: center; /* Центрируем контент */
+}
+
+.black-friday-title {
+    font-size: 2.5em;
+    color: #e20e3c;  /* Красный цвет */
+    margin-bottom: 30px;
+}
+
+/* Стиль для блока товаров */
+.black-friday-product {
+    background-color: #333; /* Темно-серый фон для товаров */
+    width: 280px;  /* Уменьшаем ширину товара */
+    margin: 20px;
+    padding: 15px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: inline-block; /* Размещаем товары в линию */
+    vertical-align: top; /* Вертикальное выравнивание */
+}
+
+.black-friday-product:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4);
+}
+
+.black-friday-product .product-image {
+    width: 100%;
+    height: 250px; /* Ограничиваем высоту изображения */
+    object-fit: cover;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+.black-friday-product .product-image:hover {
+    transform: scale(1.1); /* Увеличение изображения при наведении */
+}
+
+.black-friday-product h2 {
+    font-size: 1.3em;
+    margin: 15px 0;
+    color: #fff; /* Белый текст для названия */
+    transition: color 0.3s ease;
+}
+
+.black-friday-product h2:hover {
+    color: #e20e3c; /* Красный цвет при наведении */
+    cursor: pointer;
+}
+
+.black-friday-product p {
+    font-size: 0.9em;
+    color: #aaa; /* Цвет артикула */
+    margin-top: 10px;
+}
+
+/* Кнопка цены */
+.price-btn {
+    background-color: #d71a1a; /* Красный фон кнопки */
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 1.1em;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    margin-top: 10px;
+}
+
+.price-btn:hover {
+    background-color: #e20e3c;
+    transform: scale(1.1); /* Легкое увеличение кнопки при наведении */
+}
+
+/* Убираем подчеркивание с ссылки */
+.product-link {
+    text-decoration: none;
+    color: inherit;
+}
+
 /* Footer Section */
 footer {
     background-color: #222;
@@ -336,7 +444,6 @@ footer {
     padding-top: 10px;
     border-top: 1px solid #333;
 }
-
 /* Адаптивные стили */
 @media (max-width: 768px) {
     .footer-content {
