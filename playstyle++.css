@@ -110,11 +110,17 @@ nav {
     border-radius: 20px;
     cursor: pointer;
     transition: background-color 0.3s ease, transform 0.3s ease;
+    text-decoration: none; /* Убираем подчеркивание */
+}
+
+.nav-button:focus {
+    outline: none; /* Убираем фокусный контур */
 }
 
 .nav-button:hover {
     background-color: #555;
     transform: scale(1.1);
+    text-decoration: none; /* Убираем подчеркивание при наведении */
 }
 
 /* Секция каталога */
