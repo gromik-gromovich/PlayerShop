@@ -177,7 +177,8 @@ h2 {
 }
 
 .product-article {
-    color: #aaa;
+    font-size: 2cap;
+    color: #0a0a0a;
 }
 
 .product-price {
@@ -270,7 +271,7 @@ h2 {
 .catalog-item .product-article,
 .catalog-item .product-price {
     font-size: 1em;
-    color: #aaa;
+    color: #0a0a0a;
 }
 
 .catalog-item .product-price {
