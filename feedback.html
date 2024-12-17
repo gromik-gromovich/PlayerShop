@@ -3,8 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Каталог</title>
-    <link rel="stylesheet" href="playstyle++.css">
+    <title>Обратная Связь</title>
+    <link rel="stylesheet" href="style52.css">
+    <link rel="stylesheet" href="products.css">
 </head>
 <body>
     <header>
@@ -29,44 +30,39 @@
             </div>
         </div>
         <nav>
-            <a href="index.html" class="nav-button">Главная</a>
+            <a href="catalog.html" class="nav-button">Каталог</a>
             <a href="About us.html" class="nav-button">О Нас</a>
             <a href="Promotions.html" class="nav-button">Акции</a>
         </nav>
     </header>
+
     <main>
-        <section class="products">
-            <h2>Наши товары</h2>
-            <p class="catalog-description">Ознакомьтесь с нашим ассортиментом спортивной продукции, от футбольной экипировки до аксессуаров и инвентаря.</p>
-            <div class="catalog-container">
-                <!-- Ссылка на try.html с параметром категории -->
-                <a href="try.html?category=boots" class="catalog-item">
-                    <img src="Leao.jpg" alt="Футбольные бутсы" class="product-img football-boots">
-                    <button>Футбольные бутсы</button>
-                </a>
-                <a href="try.html?category=clothing" class="catalog-item">
-                    <img src="photoset.jpg" alt="Экипировка" class="product-img outfit">
-                    <button>Экипировка</button>
-                </a>
-                <a href="try.html?category=inventory" class="catalog-item">
-                    <img src="Equipment 1.jpg" alt="Инвентарь" class="product-img inventory">
-                    <button>Инвентарь</button>
-                </a>
-                <a href="try.html?category=accessories" class="catalog-item">
-                    <img src="Аксессуары.jpg" alt="Аксессуары" class="product-img accessories">
-                    <button>Аксессуары</button>
-                </a>                  
+        <section class="contact-form-section">
+            <div class="text-box">
+                <h2>Обратная Связь</h2>
+                <form action="submit_form.php" method="POST" class="contact-form">
+                    <label for="name">Ваш никнейм:</label>
+                    <input type="text" id="name" name="name" placeholder="Введите ваше имя" required>
+    
+                    <label for="email">Ваш email:</label>
+                    <input type="email" id="email" name="email" placeholder="Введите ваш email" required>
+    
+                    <label for="message">Сообщение:</label>
+                    <textarea id="message" name="message" placeholder="Ваше сообщение..." rows="4" required></textarea>
+    
+                    <button type="submit" class="submit-button">Отправить</button>
+                </form>
             </div>
         </section>
     </main>
-    
+
     <footer>
         <div class="footer-content">
             <div class="map-button-container">
                 <div class="map-content">
                     <img src="place.png" alt="Местоположение" class="location-icon">
                     <a href="Contacts.html">
-                        <button class="map-button">Где нас найти?</button>
+                    <button class="map-button">Где нас найти?</button>
                     </a>
                 </div>
             </div>
@@ -80,14 +76,12 @@
                 <a href="tel:+79005874570">+7 900 587 45 70</a>
                 <br>
                 <a href="mailto:33hjk.glhf@gmail.com">33hjk.glhf@gmail.com</a>
-                <a href="feedback.html">
-                    <button class="support-button">Обратная Связь</button>
-                  </a> 
+                <button class="support-button">Обратная Связь</button>
             </div>
         </div>
         <div class="footer-copyright">
             © 2024 Players Shop. All rights reserved.
         </div>
     </footer>
-</body>
-</html>
+    </body>
+    </html>
