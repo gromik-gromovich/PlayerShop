@@ -198,23 +198,23 @@ nav {
 
 /* Индивидуальные размеры для каждого изображения */
 .catalog-item:nth-child(1) .product-img {
-    height: 435px;
-    width: 380px;
+    height: 280px;
+    width:  250px;
 }
 
 .catalog-item:nth-child(2) .product-img {
-    height: 435px;
-    width: 750px;
+    height: 280px;
+    width:  500px;
 }
 
 .catalog-item:nth-child(3) .product-img {
-    height: 435px;
-    width: 380px;
+    height: 280px;
+    width:  250px;
 }
 
 .catalog-item:nth-child(4) .product-img {
-    height: 435px;
-    width: 750px;
+    height: 280px;
+    width:  500px;
 }
 
 /* Footer Section */
